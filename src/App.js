@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Encode from './Encode';
 
 function App() {
+	const [stringData, setStringData] = useState({
+		inputString: 'Hello World!'
+	});
+
 	return (
 		<div className="App">
-			<h1>Hello World!</h1>
+			<Encode stringData={stringData} />
 		</div>
 	);
 }

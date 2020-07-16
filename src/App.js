@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Encode from './Encode';
 import Decode from './Decode';
+import './App.css';
 
 function App() {
 	const [stringData, setStringData] = useState({
@@ -28,7 +29,9 @@ function App() {
 
 	return (
 		<div className="App">
+			<h1>React Base64 Encode | Decode</h1>
 			<form>
+				<label>Input</label>
 				<input
 					type="text"
 					name="inputString"
@@ -37,16 +40,19 @@ function App() {
 					onChange={onChangeInput}
 				></input>
 			</form>
-			<div>
+			<div className="buttonsDiv">
 				<button onClick={showEncode}>encode</button>
 				<button onClick={showDecode}>decode</button>
-				<div>
+			</div>
+			<div className="outputDiv">
+				<label>Output:</label>
+				<span>
 					{stringData.showED ? (
 						<Encode stringData={stringData} />
 					) : (
 						<Decode stringData={stringData} />
 					)}
-				</div>
+				</span>
 			</div>
 		</div>
 	);

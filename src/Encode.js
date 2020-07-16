@@ -7,11 +7,7 @@ function Encode({ stringData }) {
 		return btoa(s);
 	}
 
-	return (
-		<div>
-			<h1>{encodeToBase64(stringToEncode)}</h1>
-		</div>
-	);
+	return <>{encodeToBase64(stringToEncode)}</>;
 }
 
 export default Encode;

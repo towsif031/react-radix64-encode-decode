@@ -11,11 +11,7 @@ function Decode({ stringData }) {
 		}
 	}
 
-	return (
-		<div>
-			<h1>{decodeBase64(stringToDecode)}</h1>
-		</div>
-	);
+	return <>{decodeBase64(stringToDecode)}</>;
 }
 
 export default Decode;

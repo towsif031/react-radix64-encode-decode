@@ -1,0 +1,67 @@
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color: #333;
+}
+
+.App h1 {
+	text-align: center;
+}
+
+.App form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	margin-bottom: 10px;
+}
+
+.App label {
+	padding-right: 10px;
+	padding-bottom: 6px;
+	font-size: 24px;
+}
+
+.App input {
+	width: 60%;
+	min-width: 200px;
+	font-size: 20px;
+	padding: 10px 20px;
+}
+
+.buttonsDiv {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	width: 200px;
+}
+
+.buttonsDiv button {
+	padding: 10px;
+	width: 48%;
+	background: slategray;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.outputDiv {
+	margin-top: 26px;
+	background-color: rgb(230, 230, 230);
+	padding: 10px 10px;
+}
+
+.outputDiv label {
+	font-size: 20px;
+	color: #555;
+}
+
+.outputDiv span {
+	font-size: 20px;
+	padding: 10px 15px;
+	text-align: center;
+}

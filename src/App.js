@@ -29,7 +29,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<h1>React Base64 Encode | Decode</h1>
+			<h1>React Radix64 Encode | Decode</h1>
 			<form>
 				<label>Input</label>
 				<input

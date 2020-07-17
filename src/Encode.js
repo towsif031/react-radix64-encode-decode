@@ -6,7 +6,7 @@ function Encode({ stringData }) {
 	const charSet =
 		'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_';
 
-	function encodeToBase64(value) {
+	function encodeToRadix64(value) {
 		if (
 			isNaN(Number(value)) ||
 			value === null ||
@@ -31,7 +31,7 @@ function Encode({ stringData }) {
 		return result;
 	}
 
-	return <>{encodeToBase64(stringToEncode)}</>;
+	return <>{encodeToRadix64(stringToEncode)}</>;
 }
 
 export default Encode;

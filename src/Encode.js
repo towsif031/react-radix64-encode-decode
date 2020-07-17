@@ -12,7 +12,7 @@ function Encode({ stringData }) {
 			value === null ||
 			value === Number.POSITIVE_INFINITY
 		)
-			return 'The input is not valid';
+			return 'The input is not a number';
 		if (value < 0) return "Can't represent negative numbers.";
 
 		let mod,

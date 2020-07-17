@@ -10,7 +10,7 @@ function App() {
 	});
 
 	function onChangeInput(e) {
-		setStringData({ inputString: e.target.value });
+		setStringData({ inputString: e.target.value, showED: true });
 	}
 
 	function showEncode(e) {
